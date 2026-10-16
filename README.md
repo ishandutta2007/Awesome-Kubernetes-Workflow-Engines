@@ -54,75 +54,75 @@ The following hosted, managed, and serverless workflow platforms execute or inte
 
 ## ⚙️ Open-Source Workflow Engines
 
-Below are top open-source workflow orchestrators, schedulers, and pipeline engines that natively deploy on or execute against Kubernetes. Ranked in **descending order** by live GitHub star count.
+Below are top open-source workflow orchestrators, schedulers, and pipeline engines that natively deploy on or execute against Kubernetes. Ranked in **descending order** by live GitHub Stars_Count.
 
-1. **[Apache Airflow](https://github.com/apache/airflow)** [![GitHub stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
+1. **[Apache Airflow](https://github.com/apache/airflow)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
    🌪️ The industry-standard batch workflow orchestrator with Python-defined DAGs, 1,000+ ecosystem operators, rich observability UI, and battle-tested Kubernetes executors (`KubernetesExecutor` and `KubernetesPodOperator`).
 
-2. **[Ray + KubeRay](https://github.com/ray-project/ray)** [![GitHub stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)  
+2. **[Ray + KubeRay](https://github.com/ray-project/ray)** [![GitHub_Stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)  
    ⚡ Unified compute framework for scaling distributed AI and Python applications. The official KubeRay operator manages elastic Ray clusters on Kubernetes for distributed batch jobs and large-scale data transformations.
 
-3. **[Conductor](https://github.com/conductor-oss/conductor)** [![GitHub stars](https://img.shields.io/github/stars/conductor-oss/conductor?style=social&color=white)](https://github.com/conductor-oss/conductor/stargazers)  
+3. **[Conductor](https://github.com/conductor-oss/conductor)** [![GitHub_Stars](https://img.shields.io/github/stars/conductor-oss/conductor?style=social&color=white)](https://github.com/conductor-oss/conductor/stargazers)  
    🎼 Netflix-originated microservices and workflow orchestration engine. Language-agnostic, event-driven, supports complex JSON/YAML-defined state machines, and deploys natively as Kubernetes services.
 
-4. **[Kestra](https://github.com/kestra-io/kestra)** [![GitHub stars](https://img.shields.io/github/stars/kestra-io/kestra?style=social&color=white)](https://github.com/kestra-io/kestra/stargazers)  
+4. **[Kestra](https://github.com/kestra-io/kestra)** [![GitHub_Stars](https://img.shields.io/github/stars/kestra-io/kestra?style=social&color=white)](https://github.com/kestra-io/kestra/stargazers)  
    🎨 Modern declarative, language-agnostic workflow orchestrator with intuitive YAML definitions. Features real-time topology visualization, built-in code editor, and container task execution via Kubernetes Pod plugins.
 
-5. **[Prefect](https://github.com/PrefectHQ/prefect)** [![GitHub stars](https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white)](https://github.com/PrefectHQ/prefect/stargazers)  
+5. **[Prefect](https://github.com/PrefectHQ/prefect)** [![GitHub_Stars](https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white)](https://github.com/PrefectHQ/prefect/stargazers)  
    🎯 Python-centric workflow orchestration library powered by `@flow` and `@task` decorators. Features dynamic runtime DAGs, automated retries, and modular Kubernetes work pools that spawn pods per run.
 
-6. **[Temporal](https://github.com/temporalio/temporal)** [![GitHub stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)  
+6. **[Temporal](https://github.com/temporalio/temporal)** [![GitHub_Stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)  
    ⏱️ Open-source durable execution system for resilient microservices and long-running stateful workflows. Manages workflow state, timers, and retry policies while worker code runs inside Kubernetes Pods.
 
-7. **[Argo Workflows](https://github.com/argoproj/argo-workflows)** [![GitHub stars](https://img.shields.io/github/stars/argoproj/argo-workflows?style=social&color=white)](https://github.com/argoproj/argo-workflows/stargazers)  
+7. **[Argo Workflows](https://github.com/argoproj/argo-workflows)** [![GitHub_Stars](https://img.shields.io/github/stars/argoproj/argo-workflows?style=social&color=white)](https://github.com/argoproj/argo-workflows/stargazers)  
    🐙 The CNCF graduated, container-native workflow engine for Kubernetes. Each step in a workflow executes directly as a Kubernetes pod; supports parallel DAGs, artifact drivers, dynamic fan-out/fan-in, and GitOps pipelines.
 
-8. **[Dagster](https://github.com/dagster-io/dagster)** [![GitHub stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)  
+8. **[Dagster](https://github.com/dagster-io/dagster)** [![GitHub_Stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)  
    📦 Data orchestrator designed around software-defined assets rather than simple task graphs. Provides end-to-end data lineage, integrated local development, and the `dagster-k8s` executor for distributed pod scheduling.
 
-9. **[Crossplane](https://github.com/crossplane/crossplane)** [![GitHub stars](https://img.shields.io/github/stars/crossplane/crossplane?style=social&color=white)](https://github.com/crossplane/crossplane/stargazers)  
+9. **[Crossplane](https://github.com/crossplane/crossplane)** [![GitHub_Stars](https://img.shields.io/github/stars/crossplane/crossplane?style=social&color=white)](https://github.com/crossplane/crossplane/stargazers)  
    🌐 CNCF graduated framework that transforms Kubernetes clusters into universal infrastructure control planes, enabling declarative provisioning and orchestration of cloud infrastructure as native Kubernetes resources.
 
-10. **[Metaflow](https://github.com/Netflix/metaflow)** [![GitHub stars](https://img.shields.io/github/stars/Netflix/metaflow?style=social&color=white)](https://github.com/Netflix/metaflow/stargazers)  
+10. **[Metaflow](https://github.com/Netflix/metaflow)** [![GitHub_Stars](https://img.shields.io/github/stars/Netflix/metaflow?style=social&color=white)](https://github.com/Netflix/metaflow/stargazers)  
     🧠 Netflix-developed, human-centric Python framework for data science, ML pipelines, and AI engineering. Integrates natively with Kubernetes to dynamically run compute steps on GPU/CPU pods.
 
-11. **[Cadence](https://github.com/uber/cadence)** [![GitHub stars](https://img.shields.io/github/stars/uber/cadence?style=social&color=white)](https://github.com/uber/cadence/stargazers)  
+11. **[Cadence](https://github.com/uber/cadence)** [![GitHub_Stars](https://img.shields.io/github/stars/uber/cadence?style=social&color=white)](https://github.com/uber/cadence/stargazers)  
     🛡️ Uber’s open-source durable workflow execution engine (Linux Foundation). Ensures stateful code execution survives process failures and network partitions across containerized Kubernetes clusters.
 
-12. **[Tekton Pipelines](https://github.com/tektoncd/pipeline)** [![GitHub stars](https://img.shields.io/github/stars/tektoncd/pipeline?style=social&color=white)](https://github.com/tektoncd/pipeline/stargazers)  
+12. **[Tekton Pipelines](https://github.com/tektoncd/pipeline)** [![GitHub_Stars](https://img.shields.io/github/stars/tektoncd/pipeline?style=social&color=white)](https://github.com/tektoncd/pipeline/stargazers)  
     🏗️ Kubernetes-native CI/CD workflow framework governed by the CD Foundation. Standardizes cloud-native continuous integration and deployment using custom `Task`, `Pipeline`, and `PipelineRun` CRDs.
 
-13. **[Flyte](https://github.com/flyteorg/flyte)** [![GitHub stars](https://img.shields.io/github/stars/flyteorg/flyte?style=social&color=white)](https://github.com/flyteorg/flyte/stargazers)  
+13. **[Flyte](https://github.com/flyteorg/flyte)** [![GitHub_Stars](https://img.shields.io/github/stars/flyteorg/flyte?style=social&color=white)](https://github.com/flyteorg/flyte/stargazers)  
     🪁 Linux Foundation AI & Data hosted Kubernetes-native workflow orchestrator for machine learning and data processing with strongly typed Python interfaces, container versioning, and caching.
 
-14. **[Volcano](https://github.com/volcano-sh/volcano)** [![GitHub stars](https://img.shields.io/github/stars/volcano-sh/volcano?style=social&color=white)](https://github.com/volcano-sh/volcano/stargazers)  
+14. **[Volcano](https://github.com/volcano-sh/volcano)** [![GitHub_Stars](https://img.shields.io/github/stars/volcano-sh/volcano?style=social&color=white)](https://github.com/volcano-sh/volcano/stargazers)  
     🌋 CNCF batch scheduling and workflow engine tailored for high-performance computing (HPC), AI/ML, and big data workloads on Kubernetes with gang scheduling, fair-share queueing, and topology awareness.
 
-15. **[Kubeflow Pipelines](https://github.com/kubeflow/pipelines)** [![GitHub stars](https://img.shields.io/github/stars/kubeflow/pipelines?style=social&color=white)](https://github.com/kubeflow/pipelines/stargazers)  
+15. **[Kubeflow Pipelines](https://github.com/kubeflow/pipelines)** [![GitHub_Stars](https://img.shields.io/github/stars/kubeflow/pipelines?style=social&color=white)](https://github.com/kubeflow/pipelines/stargazers)  
     🧪 Dedicated ML pipeline orchestrator within the Kubeflow project. Compiles Python DSL definitions into Intermediate Representation (IR) graphs executed directly on Kubernetes clusters.
 
-16. **[Nextflow](https://github.com/nextflow-io/nextflow)** [![GitHub stars](https://img.shields.io/github/stars/nextflow-io/nextflow?style=social&color=white)](https://github.com/nextflow-io/nextflow/stargazers)  
+16. **[Nextflow](https://github.com/nextflow-io/nextflow)** [![GitHub_Stars](https://img.shields.io/github/stars/nextflow-io/nextflow?style=social&color=white)](https://github.com/nextflow-io/nextflow/stargazers)  
     🧬 Data-driven computational workflow framework heavily utilized in genomics and biomedical research. Features a native Kubernetes executor that automatically submits tasks as containerized pods.
 
-17. **[Kueue](https://github.com/kubernetes-sigs/kueue)** [![GitHub stars](https://img.shields.io/github/stars/kubernetes-sigs/kueue?style=social&color=white)](https://github.com/kubernetes-sigs/kueue/stargazers)  
+17. **[Kueue](https://github.com/kubernetes-sigs/kueue)** [![GitHub_Stars](https://img.shields.io/github/stars/kubernetes-sigs/kueue?style=social&color=white)](https://github.com/kubernetes-sigs/kueue/stargazers)  
     🚦 Kubernetes SIGs project providing job queueing, resource quota management, and multi-tenant fair sharing for Kubernetes batch jobs, MPIJobs, RayJobs, and workflow engine pods.
 
-18. **[Snakemake](https://github.com/snakemake/snakemake)** [![GitHub stars](https://img.shields.io/github/stars/snakemake/snakemake?style=social&color=white)](https://github.com/snakemake/snakemake/stargazers)  
+18. **[Snakemake](https://github.com/snakemake/snakemake)** [![GitHub_Stars](https://img.shields.io/github/stars/snakemake/snakemake?style=social&color=white)](https://github.com/snakemake/snakemake/stargazers)  
     🐍 Python-based workflow management engine focused on reproducibility, transparency, and data analysis pipelines with seamless out-of-the-box Kubernetes cluster execution.
 
-19. **[Cromwell](https://github.com/broadinstitute/cromwell)** [![GitHub stars](https://img.shields.io/github/stars/broadinstitute/cromwell?style=social&color=white)](https://github.com/broadinstitute/cromwell/stargazers)  
+19. **[Cromwell](https://github.com/broadinstitute/cromwell)** [![GitHub_Stars](https://img.shields.io/github/stars/broadinstitute/cromwell?style=social&color=white)](https://github.com/broadinstitute/cromwell/stargazers)  
     🔬 Scientific workflow engine developed by the Broad Institute supporting Workflow Description Language (WDL) and CWL, featuring a backend provider for Kubernetes batch execution.
 
-20. **[Furiko](https://github.com/furiko-io/furiko)** [![GitHub stars](https://img.shields.io/github/stars/furiko-io/furiko?style=social&color=white)](https://github.com/furiko-io/furiko/stargazers)  
+20. **[Furiko](https://github.com/furiko-io/furiko)** [![GitHub_Stars](https://img.shields.io/github/stars/furiko-io/furiko?style=social&color=white)](https://github.com/furiko-io/furiko/stargazers)  
     ⏰ Enterprise-ready cron scheduling and ad-hoc job execution platform for Kubernetes with robust concurrency policies, timezone-aware scheduling, retry policies, and execution history.
 
-21. **[Kit](https://github.com/kitproj/kit)** [![GitHub stars](https://img.shields.io/github/stars/kitproj/kit?style=social&color=white)](https://github.com/kitproj/kit/stargazers)  
+21. **[Kit](https://github.com/kitproj/kit)** [![GitHub_Stars](https://img.shields.io/github/stars/kitproj/kit?style=social&color=white)](https://github.com/kitproj/kit/stargazers)  
     🧰 Unified workflow engine that binds together task execution, local process monitoring, service orchestration, and Kubernetes resource management into developer workflows.
 
-22. **[Kontroler](https://github.com/GreedyKomodoDragon/Kontroler)** [![GitHub stars](https://img.shields.io/github/stars/GreedyKomodoDragon/Kontroler?style=social&color=white)](https://github.com/GreedyKomodoDragon/Kontroler/stargazers)  
+22. **[Kontroler](https://github.com/GreedyKomodoDragon/Kontroler)** [![GitHub_Stars](https://img.shields.io/github/stars/GreedyKomodoDragon/Kontroler?style=social&color=white)](https://github.com/GreedyKomodoDragon/Kontroler/stargazers)  
     🦎 Lightweight, Kubernetes-native DAG orchestrator supporting declarative YAML specifications and code-based pipeline construction for low-overhead container task chaining.
 
-23. **[FUSE](https://github.com/open-source-cloud/fuse)** [![GitHub stars](https://img.shields.io/github/stars/open-source-cloud/fuse?style=social&color=white)](https://github.com/open-source-cloud/fuse/stargazers)  
+23. **[FUSE](https://github.com/open-source-cloud/fuse)** [![GitHub_Stars](https://img.shields.io/github/stars/open-source-cloud/fuse?style=social&color=white)](https://github.com/open-source-cloud/fuse/stargazers)  
     💡 Actor-based workflow engine designed for AI agent workflows and durable stateful orchestration with event-driven execution models.
 
 ---
@@ -176,7 +176,7 @@ Contributions are warmly encouraged! To propose a new workflow engine or update 
 
 1. **Fork the Repository** to your GitHub account.
 2. **Add or Edit Entries** in [README.md](README.md), adhering to alphabetical or star-based sorting and tabular structure.
-3. **Include Key Data**: Name, official link, star badge, accurate pricing/free-tier details, and concise factual description.
+3. **Include Key Data**: Name, official link, Stars_Badge, accurate pricing/free-tier details, and concise factual description.
 4. **Submit a Pull Request** with a brief summary of additions or revisions.
 
 ---
@@ -186,3 +186,12 @@ Contributions are warmly encouraged! To propose a new workflow engine or update 
 - 🛡️ This repository is a **community-curated index** provided for educational and platform comparison purposes.
 - 🔒 Workflow systems operate with infrastructure-level privileges; always implement zero-trust RBAC, secret encryption, and audit logging before deploying to production clusters.
 - ⚖️ Distributed under the [MIT License](LICENSE).
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Kubernetes-Workflow-Engines&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Kubernetes-Workflow-Engines_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Kubernetes-Workflow-Engines_growth.svg">
+  </picture>
+</a>
