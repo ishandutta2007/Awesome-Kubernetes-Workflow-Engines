@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+
+    <linearGradient id="flow-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="text-shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.6"/>
+      <circle cx="40" cy="40" r="1.5" fill="#38bdf8" fill-opacity="0.25"/>
+    </pattern>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.75; transform: scale(1.08); }
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes floatSlow1 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-8px) rotate(1deg); }
+      }
+      @keyframes floatSlow2 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(8px) rotate(-1.5deg); }
+      }
+      @keyframes nodePulse {
+        0%, 100% { r: 6; opacity: 0.7; }
+        50% { r: 9; opacity: 1; }
+      }
+      @keyframes orbDrift {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(30px, -20px); }
+        100% { transform: translate(0, 0); }
+      }
+      .anim-glow { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+      .anim-dash { stroke-dasharray: 8, 8; animation: dashMove 12s linear infinite; }
+      .anim-float1 { animation: floatSlow1 5s ease-in-out infinite; }
+      .anim-float2 { animation: floatSlow2 6s ease-in-out infinite; }
+      .anim-node { animation: nodePulse 3s ease-in-out infinite; }
+      .anim-orb { animation: orbDrift 10s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Dark Canvas -->
+  <rect width="1200" height="360" fill="url(#bg-grad)"/>
+
+  <!-- Technical Grid Overlay -->
+  <rect width="1200" height="360" fill="url(#grid)"/>
+
+  <!-- Dynamic Ambient Glowing Orbs in Background -->
+  <circle cx="200" cy="80" r="140" fill="#38bdf8" fill-opacity="0.12" filter="url(#glow)" class="anim-glow anim-orb"/>
+  <circle cx="1020" cy="280" r="160" fill="#818cf8" fill-opacity="0.15" filter="url(#glow)" class="anim-glow"/>
+  <circle cx="600" cy="180" r="120" fill="#c084fc" fill-opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Background Dynamic DAG Pipelines / Workflow Connections (Behind text) -->
+  <g opacity="0.45">
+    <!-- Pipeline 1 -->
+    <path d="M 60,180 Q 250,60 480,140 T 880,100 T 1140,160" fill="none" stroke="url(#flow-line)" stroke-width="2.5" class="anim-dash"/>
+    <!-- Pipeline 2 -->
+    <path d="M 80,260 Q 300,320 560,240 T 940,280 T 1120,220" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4" class="anim-dash"/>
+    
+    <!-- DAG Nodes with connection lines -->
+    <line x1="160" y1="120" x2="260" y2="180" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5"/>
+    <line x1="260" y1="180" x2="380" y2="140" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.5"/>
+    <circle cx="160" cy="120" r="6" fill="#38bdf8" class="anim-node" filter="url(#soft-glow)"/>
+    <circle cx="260" cy="180" r="8" fill="#818cf8" filter="url(#soft-glow)"/>
+    <circle cx="380" cy="140" r="6" fill="#c084fc" class="anim-node" filter="url(#soft-glow)"/>
+
+    <line x1="820" y1="200" x2="940" y2="150" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.5"/>
+    <line x1="940" y1="150" x2="1050" y2="220" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5"/>
+    <circle cx="820" cy="200" r="6" fill="#38bdf8" filter="url(#soft-glow)"/>
+    <circle cx="940" cy="150" r="7" fill="#818cf8" class="anim-node" filter="url(#soft-glow)"/>
+    <circle cx="1050" cy="220" r="6" fill="#00f2fe" filter="url(#soft-glow)"/>
+  </g>
+
+  <!-- Ambient Workflow Feature Pills (Positioned around periphery to keep title clear) -->
+  <g class="anim-float1" opacity="0.85">
+    <rect x="70" y="48" width="130" height="32" rx="16" fill="#1e293b" fill-opacity="0.75" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="135" y="69" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ Argo Workflows</text>
+  </g>
+
+  <g class="anim-float2" opacity="0.85">
+    <rect x="1000" y="45" width="130" height="32" rx="16" fill="#1e293b" fill-opacity="0.75" stroke="#818cf8" stroke-width="1.2"/>
+    <text x="1065" y="66" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🐍 Apache Airflow</text>
+  </g>
+
+  <g class="anim-float2" opacity="0.85">
+    <rect x="75" y="280" width="125" height="32" rx="16" fill="#1e293b" fill-opacity="0.75" stroke="#c084fc" stroke-width="1.2"/>
+    <text x="137" y="301" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">⏳ Temporal &amp; DAGs</text>
+  </g>
+
+  <g class="anim-float1" opacity="0.85">
+    <rect x="990" y="275" width="140" height="32" rx="16" fill="#1e293b" fill-opacity="0.75" stroke="#00f2fe" stroke-width="1.2"/>
+    <text x="1060" y="296" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">☸️ Cloud-Native Batch</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header Tag, Title, Subtitle, & Metric Highlights -->
+  <!-- Always cleanly rendered above background graphics with high contrast -->
+  <g id="foreground" filter="url(#text-shadow)">
+    <!-- Kubernetes Pill Tag -->
+    <g transform="translate(600, 75)">
+      <rect x="-135" y="-16" width="270" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+      <circle cx="-110" cy="0" r="5" fill="#38bdf8" class="anim-node"/>
+      <text x="10" y="5" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="2" text-anchor="middle">☸️ KUBERNETES ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="165" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="44" font-weight="900" fill="url(#title-grad)" letter-spacing="-0.5">
+      Awesome Kubernetes Workflow Engines
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="210" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="500" fill="#cbd5e1" letter-spacing="0.2">
+      Curated Container-Native Orchestrators • Distributed DAG Schedulers • Cloud Batch Pipelines
+    </text>
+
+    <!-- Feature Tags Row in Foreground -->
+    <g transform="translate(600, 252)">
+      <text x="0" y="0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">
+        <tspan fill="#38bdf8">DAG Orchestration</tspan>
+        <tspan fill="#64748b">  •  </tspan>
+        <tspan fill="#818cf8">Durable Execution</tspan>
+        <tspan fill="#64748b">  •  </tspan>
+        <tspan fill="#c084fc">MLOps &amp; AI Pipelines</tspan>
+        <tspan fill="#64748b">  •  </tspan>
+        <tspan fill="#34d399">High-Throughput Batch</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Border -->
+  <rect x="0" y="356" width="1200" height="4" fill="url(#title-grad)"/>
+</svg>
